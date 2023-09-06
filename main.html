@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,21 +12,25 @@
             <h1>BMI Kalkulator</h1>
       </div>
 
-      
-
       <div class="form">
-            <form action="bmi.php" method="post">
-                  Name: <input type="text" name="name"><br>
-                  Height: <input type="text" name="height"><br>
-                  Weight: <input type="text" name="weight"><br>
-                  Genders: 
-                  <input type="radio" id="male" name="gender" value="male">
+            <form method="post" action="">
+                  <label for="name">Name:</label>
+                  <input type="text" name="name" id="name" required><br><br>
+                  
+                  <label for="weight">Weight (kg):</label>
+                  <input type="text" name="weight" id="weight" required><br><br>
+
+                  <label for="height">Height (cm):</label>
+                  <input type="text" name="height" id="height" required><br><br>
+
+                  <label for="gender">Gender:</label>
+                  <input type="radio" name="gender" value="male" id="male" required>
                   <label for="male">Male</label>
-                  <input type="radio" id="male" name="gender" value="male">
-                  <label for="male">Female</label><br>
-                  <input type="submit">
+                  <input type="radio" name="gender" value="female" id="female" required>
+                  <label for="female">Female</label><br><br>
+          
+                  <input type="submit" name="calculate" value="Calculate">
             </form>
       </div>
 </body>
-
 </html>
