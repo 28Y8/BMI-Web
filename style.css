@@ -1,6 +1,7 @@
 body {
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      background-color: rgb(99, 99, 99);
+      background-color: rgb(15, 15, 15);
+      color: white;
 }
 
 .top {
@@ -9,7 +10,7 @@ body {
       right: 10px;
       top: 10px;
       padding-top: 5px;
-      border: 5px solid #ddbc00;
+      border: 7px solid white;
 }
 
 .top h1 {
@@ -17,8 +18,8 @@ body {
 }
 
 .form {
-      top: 10px;
-      border: 5px solid #ddbc00;
+      top: 15px;
+      border: 7px solid white;
       position: relative;
       display: block;
       padding: 50px;
