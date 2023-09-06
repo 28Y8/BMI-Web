@@ -14,7 +14,7 @@
       </div>
 
       <div class="form">
-            <form method="post" action="">
+            <form method="post" action="bmi.php">
                   <label for="name">Name:</label>
                   <input type="text" name="name" id="name" required><br><br>
 
@@ -30,13 +30,8 @@
                   <input type="radio" name="gender" value="female" id="female" required>
                   <label for="female">Female</label><br><br>
 
-                  <input type="submit" name="calculate" value="Calculate">
+                  <input type="submit" name="calculate" value="Calculate" id="calculate">
             </form>
-
-            <?php
-                  // Include the BMI calculation PHP file
-                  include 'bmi.php'
-            ?>
       </div>
 </body>
 
