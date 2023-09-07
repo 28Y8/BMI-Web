@@ -22,7 +22,7 @@
 
     function getBMITextBasedOnGender($name, $gender, $bmi)
     {
-        // Lagre verdiene vi skal sammenligne
+        // Lagre verdiene vi skal sammenligne, det er BMI verdier som tilsvarer nivået ditt
         $firstVal = 18.5;
         $secondVal = 24.9;
         $thirdVal = 25;
