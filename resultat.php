@@ -70,12 +70,12 @@
         }
 
         if (empty($weight)) {
-            echo "<p>You forgot to fill out the weight</p>";
+            echo "<p>You forgot to fill out the weight or invalid data type</p>";
             return;
         }
 
         if (empty($height)) {
-            echo "<p>You forgot to fill out the height</p>";
+            echo "<p>You forgot to fill out the height or invalid data type</p>";
             return;
         }
 
