@@ -20,16 +20,16 @@
         return ($weight / $height / $height) * 10000;
     };
 
-    function getBMITextBasedOnGender($name, $gender, $bmi)
+    function getBMI($name, $gender, $bmi)
     {
-        // Lagre verdiene vi skal sammenligne, det er BMI verdier som tilsvarer nivået ditt
-        $firstVal = 18.5;
-        $secondVal = 24.9;
-        $thirdVal = 25;
-        $fourthVal = 29.9;
-        $name = strtolower($name);
+        // Make the values to compare, these are total BMI values which represent your bmi status
+        $firstVal = 18.5; // First treshold [Skinny]
+        $secondVal = 24.9; // Second treshold [Normal]
+        $thirdVal = 25; // Third treshold [Overweight]
+        $fourthVal = 29.9; // Fourth treshold [Obese]
+        $name = strtolower($name); // Make the enitre name lower cased
 
-        // Sjekk ut om det er riktig skjønn
+        // Check if the gender is correct
         if ($gender == "male") {
             if ($bmi < $firstVal) {
                 $returnTitle = "{$name}, you should eat some food, you stick...";
@@ -52,6 +52,7 @@
             }
         }
 
+        // Return the text, very simple
         return $returnTitle;
     };
 
@@ -92,7 +93,7 @@
 
         // Calculate and set
         $bmiValue = calculateBMI($weight, $height);
-        $bmiText = getBMITextBasedOnGender($name, $gender, $bmiValue);
+        $bmiText = getBMI($name, $gender, $bmiValue);
 
         // Display the submitted data
         echo "<p>$bmiText</p>";
